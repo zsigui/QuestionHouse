@@ -1,0 +1,61 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/co_common_app_main_bg</item>
+        <item name="colorPrimaryDark">@color/co_status_bar_bg</item>
+        <item name="colorAccent">@color/co_tool_bar_item_bg</item>
+
+        <!-- for actionMode -->
+        <item name="android:actionModeBackground">@color/co_status_bar_bg</item>
+        <item name="actionModeBackground">@color/co_status_bar_bg</item>
+        <!-- show actionMode above content(Toolbar) -->
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="windowActionModeOverlay">true</item>
+
+
+        <!-- Support library compatibility -->
+        <item name="android:windowActionBar">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/co_transparent</item>
+        <item name="android:background">@color/co_transparent</item>
+
+        <!-- actionBarSize changed in Lolipop -->
+        <item name="android:actionBarSize">@dimen/di_tool_bar_bg_height</item>
+        <item name="actionBarSize">@dimen/di_tool_bar_bg_height</item>
+
+        <!--actionbar style-->
+        <item name="android:actionBarItemBackground">@drawable/selector_opacity_05</item>
+        <item name="actionBarItemBackground">@drawable/selector_opacity_05</item>
+        <item name="android:actionButtonStyle">@style/ActionButton.AppTheme</item>
+        <item name="actionButtonStyle">@style/ActionButton.AppTheme</item>
+
+        <!-- Toolbar -->
+        <item name="toolbarStyle">@style/ToolbarStyle</item>
+        <item name="toolbarNavigationButtonStyle">@style/ToolbarNavigationButtonStyle</item>
+        <!--<item code = "android:windowTranslucentStatus" >true</item >-->
+        <!--<item code = "android:fitsSystemWindows" >true</item >-->
+
+    </style>
+
+    <style name="ToolbarNavigationButtonStyle" parent="Widget.AppCompat.Toolbar.Button.Navigation">
+        <item name="android:minWidth">?actionBarSize</item>
+        <item name="android:minHeight">?actionBarSize</item>
+        <!--<item code = "android:paddingLeft" >6dp</item >-->
+        <!--<item code = "android:paddingRight" >6dp</item >-->
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="ActionButton.AppTheme" parent="Widget.AppCompat.Light.ActionButton">
+        <item name="android:minWidth">?actionBarSize</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:textSize">@dimen/di_text_size_big</item>
+    </style>
+
+    <style name="ToolbarStyle">
+        <item name="android:background">@color/co_common_app_main_bg</item>
+    </style>
+</resources>

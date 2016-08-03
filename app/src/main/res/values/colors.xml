@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="co_status_bar_bg">#40BDDC</color>
+    <color name="co_tool_bar_item_bg">#1FA7C9</color>
+    <color name="co_common_app_main_bg">#1FA7C9</color>
+
+    <color name="co_transparent">#00000000</color>
+    <color name="co_white">#FFFFFF</color>
+    <color name="co_white_pressed">#F6F6F6</color>
+    <color name="co_black">#000000</color>
+
+    <color name="co_opacity_05">#0D000000</color>
+    <color name="co_opacity_20">#33000000</color>
+    <color name="co_opacity_30">#4D000000</color>
+    <color name="co_opacity_50">#80000000</color>
+    <color name="co_opacity_70">#B3000000</color>
+    <color name="co_opacity_80">#CC000000</color>
+</resources>
