@@ -1,8 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/co_common_content_bg"
+              android:gravity="center"
+              android:orientation="vertical">
 
-    <include layout="@layout/view_toolbar" />
-</RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:hint="提示内容"
+        android:text="当前选择题库：伊丽莎白二世"/>
+
+
+    <Button
+        android:id="@+id/btn_start"
+        style="@style/BtnNormal.Main"
+        android:text="开始答题"/>
+
+
+    <Button
+        android:id="@+id/btn_choose"
+        style="@style/BtnNormal.Main"
+        android:text="选择题库"/>
+
+    <Button
+        android:id="@+id/btn_add"
+        style="@style/BtnNormal.Main"
+        android:text="添加题库"/>
+
+
+</LinearLayout>

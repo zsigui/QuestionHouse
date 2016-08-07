@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/sv_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/di_item_padding">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/di_line_space"
+            android:text="[多选题] 一个人过马路如何做到不要钻到他人带你额年份的建安费的离开家"/>
+
+
+        <com.jackiez.questionhouse.ui.widget.NestedListView
+            android:id="@+id/lv_choice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/di_item_padding"
+            android:background="@color/co_transparent"
+            android:divider="@color/co_transparent"
+            android:dividerHeight="0dp"
+            android:scrollbars="vertical"/>
+
+        <Button
+            android:id="@+id/btn_ok"
+            style="@style/BtnNormal.Main"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:text="@string/st_question_btn_ok"/>
+
+        <LinearLayout
+            android:id="@+id/ll_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="25dp"
+                android:background="@color/co_btn_blue"/>
+
+            <TextView
+                android:id="@+id/tv_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="正确答案：AB"
+                android:textColor="@color/co_common_text_main"
+                android:textSize="@dimen/di_text_size_big"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

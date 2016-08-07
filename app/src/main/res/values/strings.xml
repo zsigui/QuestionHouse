@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">QuestionHouse</string>
+    <string name="app_name">答题宝</string>
+
+    <string name="st_main_hint_current_warehouse">当前题库：%s</string>
+    <string name="st_main_hint_no_warehouse">暂未选择题库!</string>
+
+    <string name="st_question_btn_ok">显示隐藏答案</string>
+    <string name="st_exam_answer_finished_hint">当前已经答完%s道题，请继续加油!</string>
 </resources>

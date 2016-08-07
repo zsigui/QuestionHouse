@@ -4,9 +4,10 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
-    <color name="co_status_bar_bg">#40BDDC</color>
-    <color name="co_tool_bar_item_bg">#1FA7C9</color>
-    <color name="co_common_app_main_bg">#1FA7C9</color>
+    <color name="co_status_bar_bg">#2FA7E9</color>
+    <color name="co_tool_bar_item_bg">#40BDDC</color>
+    <color name="co_common_app_main_bg">#40BDDC</color>
+    <color name="co_common_content_bg">#E8E8E8</color>
 
     <color name="co_transparent">#00000000</color>
     <color name="co_white">#FFFFFF</color>
@@ -19,4 +20,15 @@
     <color name="co_opacity_50">#80000000</color>
     <color name="co_opacity_70">#B3000000</color>
     <color name="co_opacity_80">#CC000000</color>
+
+    <color name="co_common_text_main">#333333</color>
+    <color name="co_common_text_second">#888888</color>
+
+    <!-- Button -->
+    <color name="co_btn_red">#f85454</color>
+    <color name="co_btn_green">#20c585</color>
+    <color name="co_btn_orange">#ffaa17</color>
+    <color name="co_btn_blue">#40BDDC</color>
+    <color name="co_btn_grey">#c9c9c9</color>
+    <color name="co_btn_grey_pressed">#B9B9B9</color>
 </resources>

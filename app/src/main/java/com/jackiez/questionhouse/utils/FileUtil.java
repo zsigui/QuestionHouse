@@ -59,6 +59,16 @@ public class FileUtil {
 
 
     /**
+     * 提取路径的文件名称，不含后缀
+     */
+    public static String extractName(String path) {
+        int separatorIndex = path.lastIndexOf(File.separator);
+        String filename = (separatorIndex < 0) ? path : path.substring(separatorIndex + 1, path.length());
+        return filename.substring(0, filename.lastIndexOf('.'));
+    }
+
+
+    /**
      * 读取文件后返回接口
      */
     public interface ReadFileCallback<T> {

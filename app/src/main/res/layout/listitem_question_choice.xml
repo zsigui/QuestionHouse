@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView android:id="@+id/tv_choice"
+                 xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/selector_item_checkbox"
+                 android:lineSpacingExtra="@dimen/di_line_space"
+                 android:orientation="vertical"
+                 android:paddingBottom="8dp"
+                 android:paddingLeft="20dp"
+                 android:paddingTop="8dp"
+                 android:textColor="@color/color_item_checkbox"
+                 android:textSize="@dimen/di_text_size_normal"/>

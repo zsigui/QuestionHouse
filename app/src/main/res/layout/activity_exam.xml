@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:gravity="center_vertical"
+        app:contentInsetEnd="0dp"
+        app:contentInsetStart="0dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <ImageView
+            android:id="@+id/iv_bar_back"
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:background="?actionBarItemBackground"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_bar_back"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <CheckedTextView
+                android:id="@+id/tv_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/left_mode_tool_button"
+                android:checked="true"
+                android:clickable="true"
+                android:text="答题模式"
+                android:textColor="@color/color_selector_white_blue"
+                android:textSize="@dimen/di_text_size_normal"/>
+
+            <CheckedTextView
+                android:id="@+id/tv_practice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/right_mode_tool_button"
+                android:checked="false"
+                android:clickable="true"
+                android:text="背题模式"
+                android:textColor="@color/color_selector_white_blue"
+                android:textSize="@dimen/di_text_size_normal"/>
+        </LinearLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/co_common_content_bg">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/tv_answer_finished_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:textColor="@color/co_common_text_second"
+            android:textSize="@dimen/di_text_size_small"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/co_btn_grey"
+        android:orientation="horizontal"
+        android:paddingBottom="6dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="6dp">
+
+        <EditText
+            android:id="@+id/et_index"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/di_text_size_normal"/>
+
+        <Button
+            android:id="@+id/btn_jump"
+            style="@style/BtnNormal.Main"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/selector_btn_green"
+            android:text="跳转"
+            android:textColor="@color/color_btn_green_border"
+            android:textSize="@dimen/di_text_size_normal"/>
+    </LinearLayout>
+</LinearLayout>
